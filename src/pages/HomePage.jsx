@@ -33,9 +33,9 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <MDBJumbotron fluid>
-          <MDBContainer className="text-white text-center mt-5">
-            <h1 className="h1-responsive display-2">Enter, team_232!</h1>
+        <MDBJumbotron fluid >
+          <MDBContainer className="text-white text-center mt-5" style={{height:'70vh'}}>
+            <h1 className="h1-responsive display-2">Welcome to FarmSpired</h1>
             <hr />
 
             <p className="display-5 mx-5 mb-5">
@@ -43,15 +43,15 @@ class HomePage extends React.Component {
               vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui,
               dolorum!
             </p>
-            <MDBBtn href="#" gradient="purple" rounded>
-              More
+            <MDBBtn href="#" className="home-btn" color="white">
+              START NOW
             </MDBBtn>
           </MDBContainer>
         </MDBJumbotron>
         <MDBContainer>
           <MDBRow>
             <MDBCol md="12" className="mt-4">
-              <h2 className="text-center my-5 font-weight-bold">Get FarmSpired By team_232! #weRock</h2>
+              <h2 className="text-center my-5 font-weight-bold">What We Are About</h2>
             </MDBCol>
             <MDBCol md="6">
               <p className="mb-1">
