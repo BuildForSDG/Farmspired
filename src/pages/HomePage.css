@@ -1,6 +1,6 @@
 body {
   background: #efefef;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
 }
 
 a.border.nav-link.border-light.rounded.mr-1 {
@@ -49,13 +49,13 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   background-position: center center;
   background-size: cover;
 }
-.home-btn{
-  background-color: #fff !important;
+.home-btn {
+  background-color: #fff;
   width: 40%;
-  color: #1952FF;
+  color: #1952ff;
   font-weight: bold;
   border-radius: 20px;
 }
-.home-btn:hover{
-  transform: translate(0px,-5px);
+.home-btn:hover {
+  transform: translate(0px, -5px);
 }
