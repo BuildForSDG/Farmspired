@@ -33,8 +33,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <MDBJumbotron fluid >
-          <MDBContainer className="text-white text-center mt-5" style={{height:'70vh'}}>
+        <MDBJumbotron fluid>
+          <MDBContainer className="text-white text-center mt-5" style={{ height: '70vh' }}>
             <h1 className="h1-responsive display-2">Welcome to FarmSpired</h1>
             <hr />
 
