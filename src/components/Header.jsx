@@ -6,7 +6,7 @@ import './jquery.min';
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark" style={{padding:'20px'}}>
+      <nav className="navbar navbar-expand-lg navbar-dark" style={{ padding: '20px' }}>
         <a className="navbar-brand" href="/">
           FarmSpired
         </a>
