@@ -1,6 +1,6 @@
 .navbar {
-    background-image:linear-gradient(to right,#0040ff,#668cff) !important;
-    font-family: 'Montserrat', sans-serif;    
+  background-image: linear-gradient(to right, #0040ff, #668cff);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar > .navbar-brand {
