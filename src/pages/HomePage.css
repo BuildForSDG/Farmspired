@@ -49,6 +49,7 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   background-position: center center;
   background-size: cover;
 }
+
 .home-btn {
   background-color: #fff;
   width: 40%;
@@ -56,6 +57,7 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   font-weight: bold;
   border-radius: 20px;
 }
+
 .home-btn:hover {
   transform: translate(0, -5px);
 }
