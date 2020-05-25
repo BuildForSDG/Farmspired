@@ -55,8 +55,9 @@ class HomePage extends React.Component {
             </MDBCol>
             <MDBCol md="6">
               <p className="mb-1">
-                Omnis fugit magni magnam quo necessitatibus amet harum vel! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Id quam hic, debitis blanditiis, eum similique itaque maiores error cumque in corrupti
+                Farmspired helps bring agriculture in Nigeria in a new light.The digitalized way.We provide trainings
+                for upcoming farmers,databases to store farmers digitally whoa are in need of funds or otherr benefits
+                and so much more
               </p>
               <p className="text-muted mb-1">
                 lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum
@@ -92,13 +93,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="bars" className="pink-text pr-2" />
-                      <strong>FARM</strong>
+                      <strong>CAPITAL FORUM</strong>
                     </MDBCardTitle>
                     <MDBCardText>
                       lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
                       dalum lorem ipsum dalum ipsum
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="aqua" rounded>
+                    <MDBBtn href="#" gradient="blue" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -112,13 +113,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="css3" brand className="pink-text pr-2" />
-                      <strong>CSS</strong>
+                      <strong>DATABASE</strong>
                     </MDBCardTitle>
                     <MDBCardText>
                       lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
                       dalum lorem ipsum dalum ipsum
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="peach" rounded>
+                    <MDBBtn href="#" gradient="blue" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -132,7 +133,7 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="cubes" className="blue-text pr-2" />
-                      <strong>REACT</strong>
+                      <strong>TRAININGS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
                       lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
@@ -153,13 +154,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="css3" brand className="pink-text pr-2" />
-                      <strong>PRODUCTS</strong>
+                      <strong>PURCHASE/MARKETING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
                       lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
                       dalum lorem ipsum dalum ipsum
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="peach" rounded>
+                    <MDBBtn href="#" gradient="blue" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -173,13 +174,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="table" className="green-text pr-2" />
-                      <strong>DATABASE</strong>
+                      <strong>ADVANCED MACHINERY HIRING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
                       lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
                       dalum lorem ipsum dalum ipsum.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="aqua" rounded>
+                    <MDBBtn href="#" gradient="blue" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -193,14 +194,14 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="arrows-alt" className="blue-text pr-2" />
-                      <strong>MR VICKY...lol</strong>
+                      <strong>iMPROVED SEED /FERTILIZERS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
                       lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
                       dalum lorem ipsum dalum ipsum
                     </MDBCardText>
 
-                    <MDBBtn>More</MDBBtn>
+                    <MDBBtn gradient="blue">More</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBAnimation>
