@@ -57,5 +57,5 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   border-radius: 20px;
 }
 .home-btn:hover {
-  transform: translate(0px, -5px);
+  transform: translate(0, -5px);
 }
