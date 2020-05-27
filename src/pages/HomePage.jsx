@@ -18,6 +18,7 @@ import {
   MDBAnimation
 } from 'mdbreact';
 import './HomePage.css';
+import soil from '../assets/soil.jpg';
 
 class HomePage extends React.Component {
   constructor() {
@@ -38,11 +39,7 @@ class HomePage extends React.Component {
             <h1 className="h1-responsive display-2">Welcome to FarmSpired</h1>
             <hr />
 
-            <p className="display-5 mx-5 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio
-              vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui,
-              dolorum!
-            </p>
+            <p className="display-5 mx-5 mb-5">Eco-friendly farm produce.Digitalized database.The future of farming.</p>
             <MDBBtn href="#" className="home-btn" color="white">
               START NOW
             </MDBBtn>
@@ -70,18 +67,7 @@ class HomePage extends React.Component {
               <hr className="my-5 " />
             </MDBCol>
             <MDBCol md="6">
-              <p className="mb-1">
-                Omnis fugit magni magnam quo necessitatibus amet harum vel! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Id quam hic, debitis blanditiis, eum similique itaque maiores error cumque in corrupti
-              </p>
-              <p className="text-muted mb-1">
-                lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum
-                lorem ipsum dalum ipsum
-              </p>
-              <p className="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quam hic, debitis blanditiis, eum similique
-                itaque maiores error cumque in corrupti, omnis fugit magni magnam quo necessitatibus amet harum vel!
-              </p>
+              <img src={soil} alt="" className="img-fluid" />
               <hr className="my-5" />
             </MDBCol>
           </MDBRow>
@@ -96,10 +82,10 @@ class HomePage extends React.Component {
                       <strong>CAPITAL FORUM</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                      We set farmers who are not financialy capable to start their business
+                      with government offiials,NGOs for provision of capital.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="blue" rounded>
+                    <MDBBtn href="#" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -116,10 +102,12 @@ class HomePage extends React.Component {
                       <strong>DATABASE</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                    As a platform we register  Farmers 
+                    in order to get funding or other benefits
+                     from either the government or private bodies and they 
+                     go to the right people who need them, no partiality.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="blue" rounded>
+                    <MDBBtn href="#" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -136,10 +124,10 @@ class HomePage extends React.Component {
                       <strong>TRAININGS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                    We offer farmers who lack the necessary skill to run an advanced farming system
+                    trainings and orientation programs which would be beneficial to the farmers in various areas 
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="blue" rounded>
+                    <MDBBtn href="#" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -157,10 +145,10 @@ class HomePage extends React.Component {
                       <strong>PURCHASE/MARKETING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                     We link farmers to sellers of various raw materials and farm equipments 
+                     We  also link the farmers to their potential customers
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="blue" rounded>
+                    <MDBBtn href="#" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -177,10 +165,10 @@ class HomePage extends React.Component {
                       <strong>ADVANCED MACHINERY HIRING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum.
+                    This is a forum where registered farmers can rent heavy machinery , tools
+                    or equipments for your farm work and return at an agreed date.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="blue" rounded>
+                    <MDBBtn href="#" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -197,11 +185,12 @@ class HomePage extends React.Component {
                       <strong>iMPROVED SEED /FERTILIZERS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                    Since we already have a database, 
+                    the government can provide seeds to the farmers for free
+                     or at a subsidized rate through the seed servicing forum
                     </MDBCardText>
 
-                    <MDBBtn gradient="blue">More</MDBBtn>
+                    <MDBBtn gradient="forestgreen">More</MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBAnimation>
