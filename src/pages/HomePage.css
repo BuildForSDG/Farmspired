@@ -52,10 +52,52 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
 .home-btn {
   background-color: #fff;
   width: 40%;
-  color: #1952ff;
+  color: #00b33c;
   font-weight: bold;
   border-radius: 20px;
 }
 .home-btn:hover {
   transform: translate(0, -5px);
+}
+
+.display-2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.img-fluid {
+  box-shadow: 7px 9px 20px #4aaf4a;
+}
+
+img.img-fluid {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+img.img-fluid {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.more:hover {
+  background-color:#00e64d;
+  color: whitr;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
