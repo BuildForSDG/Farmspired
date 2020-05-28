@@ -11,6 +11,10 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   color: #1c2331;
 }
 
+p {
+  font-size: 20px;
+}
+
 .btn.btn-sm.indigo:hover {
   color: #fff;
 }
@@ -91,7 +95,7 @@ img.img-fluid {
 }
 
 .more:hover {
-  background-color:#00e64d;
+  background-color: #00e64d;
   color: whitr;
 }
 
@@ -102,4 +106,9 @@ img.img-fluid {
   100% {
     transform: translateY(-10px);
   }
+}
+
+.more-btn:hover {
+  background: #00e64d;
+  color: #fff;
 }
