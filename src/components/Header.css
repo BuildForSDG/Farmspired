@@ -1,0 +1,8 @@
+.navbar {
+  background-image: linear-gradient(to right, #00b33c, #00ff55);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar > .navbar-brand {
+  padding: 10px;
+}

@@ -1,5 +1,6 @@
 body {
   background: #efefef;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a.border.nav-link.border-light.rounded.mr-1 {
@@ -10,12 +11,16 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   color: #1c2331;
 }
 
+p {
+  font-size: 20px;
+}
+
 .btn.btn-sm.indigo:hover {
   color: #fff;
 }
 
 .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(36, 25, 25, 0.1);
 }
 
 #categories > .col-md-4.mb-5 {
@@ -47,4 +52,63 @@ a.border.nav-link.border-light.rounded.mr-1:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/jumbotronImage.jpg');
   background-position: center center;
   background-size: cover;
+}
+
+.home-btn {
+  background-color: #fff;
+  width: 40%;
+  color: #00b33c;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.home-btn:hover {
+  transform: translate(0, -5px);
+}
+
+.display-2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.img-fluid {
+  box-shadow: 7px 9px 20px #4aaf4a;
+}
+
+img.img-fluid {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+img.img-fluid {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.more:hover {
+  background-color: #00e64d;
+  color: whitr;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.more-btn:hover {
+  background: #00e64d;
+  color: #fff;
 }
