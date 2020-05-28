@@ -19,6 +19,7 @@ import {
 } from 'mdbreact';
 import './HomePage.css';
 import soil from '../assets/soil.jpg';
+import agric from '../assets/agric.jpg';
 
 class HomePage extends React.Component {
   constructor() {
@@ -67,7 +68,7 @@ class HomePage extends React.Component {
               <hr className="my-5 " />
             </MDBCol>
             <MDBCol md="6">
-              <img src={soil} alt="" className="img-fluid" />
+              <img src={agric} alt="" className="img-fluid" width="800" />
               <hr className="my-5" />
             </MDBCol>
           </MDBRow>
@@ -82,10 +83,10 @@ class HomePage extends React.Component {
                       <strong>CAPITAL FORUM</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      We set farmers who are not financialy capable to start their business
-                      with government offiials,NGOs for provision of capital.
+                      We set farmers who are not financialy capable to start their business with government
+                      offiials,NGOs or other organizations <br></br> for provision of capital.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="forestgreen" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -102,12 +103,10 @@ class HomePage extends React.Component {
                       <strong>DATABASE</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                    As a platform we register  Farmers 
-                    in order to get funding or other benefits
-                     from either the government or private bodies and they 
-                     go to the right people who need them, no partiality.
+                      As a platform we register Farmers in order to get funding or other benefits from either the
+                      government or private bodies and they go to the right people who need them, no partiality.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="forestgreen" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -124,10 +123,10 @@ class HomePage extends React.Component {
                       <strong>TRAININGS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                    We offer farmers who lack the necessary skill to run an advanced farming system
-                    trainings and orientation programs which would be beneficial to the farmers in various areas 
+                      We offer farmers who lack the necessary skill to run an advanced farming system trainings and
+                      orientation programs which would be beneficial to the farmers in various areas
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="forestgreen" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -145,10 +144,10 @@ class HomePage extends React.Component {
                       <strong>PURCHASE/MARKETING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                     We link farmers to sellers of various raw materials and farm equipments 
-                     We  also link the farmers to their potential customers
+                      We link farmers to sellers of various raw materials and farm equipments We also link the farmers
+                      to their potential customers
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="forestgreen" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -165,10 +164,10 @@ class HomePage extends React.Component {
                       <strong>ADVANCED MACHINERY HIRING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                    This is a forum where registered farmers can rent heavy machinery , tools
-                    or equipments for your farm work and return at an agreed date.
+                      This is a forum where registered farmers can rent heavy machinery , tools or equipments for your
+                      farm work and return at an agreed date.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="forestgreen" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -185,12 +184,13 @@ class HomePage extends React.Component {
                       <strong>iMPROVED SEED /FERTILIZERS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                    Since we already have a database, 
-                    the government can provide seeds to the farmers for free
-                     or at a subsidized rate through the seed servicing forum
+                      Since we already have a database, the government can provide seeds to the farmers for free or at a
+                      subsidized rate through the seed servicing forum
                     </MDBCardText>
 
-                    <MDBBtn gradient="forestgreen">More</MDBBtn>
+                    <MDBBtn className="more-btn" gradient="forestgreen">
+                      More
+                    </MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBAnimation>
