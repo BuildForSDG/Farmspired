@@ -5,7 +5,7 @@ import './jquery.min';
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark default-color">
+      <nav className="navbar mb-2 navbar-expand-lg navbar-dark">
         <a className="navbar-brand" href="/">
           FarmSpired
         </a>
@@ -34,8 +34,8 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Services
+              <a className="nav-link" href="/registrationPage">
+                Register
               </a>
             </li>
             <li className="nav-item">

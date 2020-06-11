@@ -2,3 +2,7 @@
   margin-top: 10em;
   margin-bottom: -10em;
 }
+
+.navbar {
+  background-color: rgba(97, 204, 9, 0.644);
+}
