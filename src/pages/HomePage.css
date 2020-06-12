@@ -71,18 +71,10 @@ p {
   font-weight: bold;
 }
 
-.img-fluid {
+img.img-fluid {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
   box-shadow: 7px 9px 20px #4aaf4a;
-}
-
-img.img-fluid {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
-}
-
-img.img-fluid {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
 }
 
 @-webkit-keyframes mover {
