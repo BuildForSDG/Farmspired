@@ -2,15 +2,15 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formPage {
+  width: 40%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: -15rem;
 }
 
 .App-header {
