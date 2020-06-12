@@ -56,7 +56,7 @@ p {
 
 .home-btn {
   background-color: #fff;
-  width: 40%;
+  width: 30%;
   color: #00b33c;
   font-weight: bold;
   border-radius: 20px;
@@ -96,7 +96,7 @@ img.img-fluid {
 
 .more:hover {
   background-color: #00e64d;
-  color: whitr;
+  color: white;
 }
 
 @keyframes mover {
