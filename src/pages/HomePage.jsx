@@ -34,7 +34,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ marginTop: '70px' }}>
         <MDBJumbotron fluid>
           <MDBContainer className="text-white text-center mt-5" style={{ height: '70vh' }}>
             <h1 className="h1-responsive display-2">Welcome to FarmSpired</h1>
@@ -69,7 +69,7 @@ class HomePage extends React.Component {
             </MDBCol>
             <MDBCol md="6">
               <img src={agric} alt="" className="img-fluid" width="800" />
-              <hr className="my-5" />
+              {/* <hr className="my-5" /> */}
             </MDBCol>
           </MDBRow>
           <MDBRow>
