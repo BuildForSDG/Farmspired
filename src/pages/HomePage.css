@@ -78,8 +78,7 @@ img.img-fluid {
 }
 
 @-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  
+  0% { transform: translateY(0); }  
   100% { transform: translateY(-10px); }
 }
 
@@ -89,8 +88,7 @@ img.img-fluid {
 }
 
 @keyframes mover {
-  0% { transform: translateY(0); }
-  
+  0% { transform: translateY(0); }  
   100% { transform: translateY(-10px); }
 }
 
