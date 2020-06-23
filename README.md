@@ -27,7 +27,9 @@ setup
 run the `yarn install `in the server directory 
 
 have `mongobd installed `since its the database we have having 
+to test that its installed correctly type `mongo` or `mongod` in the console or terminal
 for now create a database called `admin`
+this is done by typing `use <database name>` in the mongodb console
 
 then run `yarn start` then 
 server will run on port `4000` locally
