@@ -1,5 +1,5 @@
 const passport = require('passport');
-const { MongoClient } = require('mongodb')
+const { MongoClient } = require('mongodb');
 const { Strategy } = require('passport-local');
 
 function localstartegy(){
@@ -7,32 +7,31 @@ function localstartegy(){
     {
       emailField: 'email',
       passwordField: 'password'
-    }, (email, password ,done) => {
+    }, (email, password, done) => {
       const url = 'mongodb://localhost:27017';
-      const dbName = 'admin'; 
+      const dbName = 'admin';
       (async function checkForUser() {
         try {
-          let client
-          client = MongoClient.connect(url)
+          let client;
+          client = MongoClient.connect(url);
 
           const db = client.db(dbName);
           const col = db.collection('users');
 
-          const user = await col.findOne({ email })
+          const user = await col.findOne({ email });
 
           if (user.password === password) {
             done(null, user);
           } else {
             done(null, false);
           }
-          console.log(email, password)
+          console.log(email, password);
         } catch (err) {
-          console.log(err)
+          console.log(err);
         }
-    //close
-        client.close()
-      }())
-    }
-  ))
-}
-module.exports = localstartegy()
+        //close
+        client.close();
+      })();
+  }));
+};
+module.exports = localstartegy();
