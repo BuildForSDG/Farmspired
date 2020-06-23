@@ -21,6 +21,18 @@ Talk about what problem this solves, what SDG(s) and SGD targets it addresses an
 
 How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
 
+### server(beta)
+setup
+
+run the `yarn install `in the server directory 
+
+have `mongobd installed `since its the database we have having 
+for now create a database called `admin`
+
+then run `yarn start` then 
+server will run on port `4000` locally
+
+
 ## Setup
 
 Install `npm` or `yarn` if you dont have any of them already installed. We recommend Yarn though.
