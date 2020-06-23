@@ -12,9 +12,10 @@ function RegistrationPage() {
               <h3 className="white-text mb-3 pt-3 font-weight-bold">SIGN UP</h3>
             </MDBRow>
           </div>
-          <form className="text-center border border-light p-5" action="#!">
+          <form className="text-center border border-light p-5" action="http://localhost:4000/auth/signup" method="POST">
             <input
               required
+              name="firstname"
               type="text"
               id="defaultLoginFormText"
               className="form-control mb-4"
@@ -22,14 +23,16 @@ function RegistrationPage() {
             />
             <input
               required
+              name="Secondname"
               type="text"
               id="defaultLoginFormText"
               className="form-control mb-4"
               placeholder="Enter Second Name"
             />
-            <input required type="text" id="defaultLoginFormText" className="form-control mb-4" placeholder="Address" />
+            <input required name="Address" type="text" id="defaultLoginFormText" className="form-control mb-4" placeholder="Address" />
             <input
               required
+              name="email"
               type="email"
               id="defaultLoginFormEmail"
               className="form-control mb-4"
@@ -37,6 +40,7 @@ function RegistrationPage() {
             />
             <input
               required
+              name="password"
               type="password"
               id="defaultLoginFormPassword"
               className="form-control mb-4"

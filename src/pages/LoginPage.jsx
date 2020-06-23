@@ -13,10 +13,10 @@ function LoginPage() {
               <h3 className="white-text mb-3 pt-3 font-weight-bold">SIGN IN</h3>
             </MDBRow>
           </div>
-          <form className="text-center border border-light p-5" action="#!">
-            <input type="email" id="defaultLoginFormEmail" className="form-control mb-4" placeholder="E-mail" />
+          <form className="text-center border border-light p-5" action="http://localhost:4000/auth/login/userID" method="POST">
+            <input name="email" type="email" id="defaultLoginFormEmail" className="form-control mb-4" placeholder="E-mail" />
 
-            <input type="password" id="defaultLoginFormPassword" className="form-control mb-4" placeholder="Password" />
+            <input name="password" type="password" id="defaultLoginFormPassword" className="form-control mb-4" placeholder="Password" />
 
             <div className="text-center">
               <div>
