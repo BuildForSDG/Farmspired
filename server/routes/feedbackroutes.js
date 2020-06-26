@@ -7,9 +7,7 @@ function routes() {
 
   router.post('/askQuestion', (req, res) => {
     res.json(req.body);
-
   });
   return router;
 }
-
 module.exports = routes();

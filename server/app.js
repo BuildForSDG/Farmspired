@@ -21,8 +21,7 @@ app.use(cookeeparser());
 app.use('/auth', urlEncode, authroutes);
 app.use('/feedback', feedbackroutes);
 
-app.use(morgan((tokens, req, res) => {
-  return [
+app.use(morgan((tokens, req, res) => { return [
     tokens.method(req, res),
     tokens.url(req, res),
     tokens.status(req, res),
@@ -34,13 +33,10 @@ app.use(morgan((tokens, req, res) => {
 app.use(cors({
   origin: CLIENT_END_POINT, // allow to server to accept request from different origin
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
-  //credentials: true // allow session cookie from browser to pass through
 }));
-
-
 
 app.get('/', (req, res) => {
   res.redirect(CLIENT_END_POINT);
 });
 
-app.listen(port);
+app.listen(port)

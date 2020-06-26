@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { MongoClient } = require('mongodb');
-const debug = require('debug')('app:authRoutes');
 const passport = require('passport');
 
 const CLIENT_END_POINT = 'http://localhost:1234';
@@ -8,28 +7,28 @@ const CLIENT_END_POINT = 'http://localhost:1234';
 function routes() {
   router.post('/signup', (req, res) => {
     const { firstname, Secondname, Address, email, password } = req.body;
+
     const url = 'mongodb://127.0.0.1:27017';
    
-      (async function addNewUser() {
-        let client;
-        try {
-          client = await MongoClient.connect(url, { useUnifiedTopology: true });
+  (async function addNewUser() {
+    let client;
+    try {
+     client = await MongoClient.connect(url, { useUnifiedTopology: true });
 
-          const db = client.db('admin');
-          const user = { firstname, Secondname, Address, email, password };
+    const db = client.db('admin');
+    const user = { firstname, Secondname, Address, email, password };
 
-          const coll = db.collection('users');
-          const result = await coll.insertOne(user);
-          // we login in the user if success full
-          req.login(result.ops[0], () => {
-            res.send('you  are now logged in ');
-          });
-        } catch (err) {
-        }
-      }());
-    
-
-  });
+     const coll = db.collection('users');
+    const result = await coll.insertOne(user);
+    // we login in the user if success full
+    req.login(result.ops[0], () => {
+    res.send('you  are now logged in ');
+    });
+  } catch (err) {
+    throw(err)
+  }
+}());
+});
   router.post('/login/userID', (passport.authenticate('local', {
     successRedirect: CLIENT_END_POINT,
     failureRedirect: ''
