@@ -2,14 +2,14 @@ const express = require('express');
 const debug = require('debug')("app");
 const bodyparser = require('body-parser');
 const morgan = require('morgan');
-const authroutes = require('./routes/authroute');
-const cors = require('cors');
-const feedbackroutes = require('./routes/feedbackroutes');
-const CLIENT_END_POINT = "http://localhost:1234";
 const session = require('express-session');
+const cors = require('cors');
 const cookeeparser = require('cookie-parser');
-require('./config/passport_config')(app);
+const authroutes = require('./routes/authroute');
+const feedbackroutes = require('./routes/feedbackroutes');
+require('./config/passport_config')('app');
 
+const CLIENT_END_POINT = "http://localhost:1234";
 const app = express();
 const port = process.env.PORT || 4000;
 
@@ -46,6 +46,5 @@ app.get('/', (req, res) => {
   res.redirect(CLIENT_END_POINT)
 });
 
-//app.listen(port,
-  //() => console.log(`Server is running on port ${port}!`)
-//);
+app.listen(port,
+);
