@@ -21,13 +21,14 @@ app.use(cookeeparser());
 app.use('/auth', urlEncode, authroutes);
 app.use('/feedback', feedbackroutes);
 
-app.use(morgan((tokens, req, res) => { return [
-    tokens.method(req, res),
-    tokens.url(req, res),
-    tokens.status(req, res),
-    tokens.res(req, res, 'content-length'), '-',
-    tokens['response-time'](req, res), 'ms'
-  ].join(' ');
+app.use(morgan((tokens, req, res) => { 
+[
+tokens.method(req, res),
+tokens.url(req, res),
+tokens.status(req, res),
+tokens.res(req, res, 'content-length'), '-',
+tokens['response-time'](req, res), 'ms'
+].join(' ');
 }));
 
 app.use(cors({
@@ -39,4 +40,4 @@ app.get('/', (req, res) => {
   res.redirect(CLIENT_END_POINT);
 });
 
-app.listen(port)
+app.listen(port);
