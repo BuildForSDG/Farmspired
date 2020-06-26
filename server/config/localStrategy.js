@@ -29,7 +29,7 @@ function localstartegy() {
         }
         client.close();
       }());
-  })
- );
+    })
+  );
 }
 module.exports = localstartegy();
