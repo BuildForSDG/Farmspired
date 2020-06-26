@@ -14,20 +14,19 @@ function routes() {
     (async function addNewUser() {
       let client;
       try {
-        client = await MongoClient.connect(url, { useUnifiedTopology: true })
-        debug('database connection is success full')
+        client = await MongoClient.connect(url, { useUnifiedTopology: true });
+        debug('database connection is success full');
 
-        const db = client.db('admin')
+        const db = client.db('admin');
         const user = { firstname, Secondname, Address, email, password }
-        const coll = db.collection('users')
-        const result = await coll.insertOne(user)
+        const coll = db.collection('users');
+        const result = await coll.insertOne(user);
         // we login in the user if success full
         req.login(result.ops[0], () => {
-          res.send('you  are now logged in ')
+          res.send('you  are now logged in ');
         });
-        console.log(result)
       } catch (err) {
-        debug(result)
+        debug(result);
       }
     })();
 
@@ -42,13 +41,12 @@ function routes() {
     res.json({
       "user": "122332233",
       "status": "has been logged out"
-    })
+    });
   });
 
   router.post('/editProfile', (req, res) => {
     // allow edit of the user profile
     res.json(req.body)
-    console.log(req.body)
   });
   
   return router;

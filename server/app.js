@@ -8,6 +8,7 @@ const feedbackroutes = require('./routes/feedbackroutes');
 const CLIENT_END_POINT = "http://localhost:1234";
 const session = require('express-session');
 const cookeeparser = require('cookie-parser');
+require('./config/passport_config')(app);
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -18,7 +19,7 @@ app.use(bodyparser.json());
 app.use(session({ secret: 'farmspired' }));
 app.use(cookeeparser());
 
-require('./config/passport_config')(app);
+
 
 app.use('/auth', urlEncode, authroutes);
 app.use('/feedback', feedbackroutes);
@@ -30,7 +31,7 @@ app.use(morgan(function (tokens, req, res) {
     tokens.status(req, res),
     tokens.res(req, res, 'content-length'), '-',
     tokens['response-time'](req, res), 'ms'
-  ].join(' ')
+  ].join(' ');
 }));
 
 app.use(cors({
