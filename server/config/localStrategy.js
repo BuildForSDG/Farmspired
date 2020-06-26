@@ -2,7 +2,7 @@ const passport = require('passport');
 const { MongoClient } = require('mongodb');
 const { Strategy } = require('passport-local');
 
-function localstartegy(){
+function localstartegy() {
   passport.use(new Strategy(
     {
       emailField: 'email',
@@ -12,7 +12,7 @@ function localstartegy(){
       const dbName = 'admin';
       (async function checkForUser() {
         try {
-          let client;
+          const client;
           client = MongoClient.connect(url);
 
           const db = client.db(dbName);
@@ -25,13 +25,11 @@ function localstartegy(){
           } else {
             done(null, false);
           }
-          console.log(email, password);
         } catch (err) {
-          console.log(err);
         }
-        //close
         client.close();
-      })();
-  }));
-};
+      }());
+  })
+ );
+}
 module.exports = localstartegy();

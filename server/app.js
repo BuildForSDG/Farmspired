@@ -1,5 +1,4 @@
 const express = require('express');
-const debug = require('debug')("app");
 const bodyparser = require('body-parser');
 const morgan = require('morgan');
 const session = require('express-session');
@@ -9,7 +8,7 @@ const authroutes = require('./routes/authroute');
 const feedbackroutes = require('./routes/feedbackroutes');
 require('./config/passport_config')('app');
 
-const CLIENT_END_POINT = "http://localhost:1234";
+const CLIENT_END_POINT = 'http://localhost:1234';
 const app = express();
 const port = process.env.PORT || 4000;
 
@@ -19,12 +18,10 @@ app.use(bodyparser.json());
 app.use(session({ secret: 'farmspired' }));
 app.use(cookeeparser());
 
-
-
 app.use('/auth', urlEncode, authroutes);
 app.use('/feedback', feedbackroutes);
 
-app.use(morgan(function (tokens, req, res) {
+app.use(morgan((tokens, req, res) => {
   return [
     tokens.method(req, res),
     tokens.url(req, res),
@@ -36,15 +33,14 @@ app.use(morgan(function (tokens, req, res) {
 
 app.use(cors({
   origin: CLIENT_END_POINT, // allow to server to accept request from different origin
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
   //credentials: true // allow session cookie from browser to pass through
 }));
 
 
 
 app.get('/', (req, res) => {
-  res.redirect(CLIENT_END_POINT)
+  res.redirect(CLIENT_END_POINT);
 });
 
-app.listen(port,
-);
+app.listen(port);
