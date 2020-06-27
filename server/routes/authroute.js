@@ -8,6 +8,7 @@ function routes() {
   router.post('/signup', (req, res) => {
 
     const { firstname, Secondname, Address, email, password } = req.body;
+    
     const url = 'mongodb://127.0.0.1:27017';
 
     (async function addNewUser() {
