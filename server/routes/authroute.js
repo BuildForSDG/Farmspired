@@ -6,13 +6,13 @@ const CLIENT_END_POINT = 'http://localhost:1234';
 // sign up post
 function routes() {
   router.post('/signup', (req, res) => {
-
-    const { firstname, Secondname, Address, email, password } = req.body;
+    const {
+      firstname, Secondname, Address, email, password
+    } = req.body;
     
     const url = 'mongodb://127.0.0.1:27017';
 
     (async function addNewUser() {
-
       let client;
       try {
         client = await MongoClient.connect(url, { useUnifiedTopology: true });
