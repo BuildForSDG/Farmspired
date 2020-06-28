@@ -12,7 +12,7 @@ function localstartegy() {
       const dbName = 'admin';
       (async function checkForUser() {
         try {
-          const client;
+          let client;
           client = MongoClient.connect(url);
 
           const db = client.db(dbName);

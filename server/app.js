@@ -6,14 +6,14 @@ const cors = require('cors');
 const cookeeparser = require('cookie-parser');
 const authroutes = require('./routes/authroute');
 const feedbackroutes = require('./routes/feedbackroutes');
-require('./config/passport_config')('app');
+
 
 const CLIENT_END_POINT = 'http://localhost:1234';
 const app = express();
 const port = process.env.PORT || 4000;
 
 const urlEncode = bodyparser.urlencoded({ extended: false });
-
+require('./config/passport_config')(app);
 app.use(bodyparser.json());
 app.use(session({ secret: 'farmspired' }));
 app.use(cookeeparser());

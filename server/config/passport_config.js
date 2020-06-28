@@ -1,5 +1,5 @@
 const passport = require('passport');
-require('./config/localStrategy.js');
+require('../config/localStrategy.js');
 
 function passportConfig(app) {
   app.use(passport.initialize());
