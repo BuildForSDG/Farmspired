@@ -5,7 +5,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="container-fluid page-footer black font-small pd-50">
+    <footer className="container-fluid page-footer  font-small pd-50">
       <div className="row">
         <div className="col-md-12 py-5">
           <div className="mb-5 flex-center">
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer-copyright text-center py-3">
+      <div className="text-center py-3">
         © 2020 Copyright:
         <a href="/"> FarmSpired.com</a>
       </div>

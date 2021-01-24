@@ -18,6 +18,8 @@ import {
   MDBAnimation
 } from 'mdbreact';
 import './HomePage.css';
+import soil from '../assets/soil.jpg';
+import agric from '../assets/agric.jpg';
 
 class HomePage extends React.Component {
   constructor() {
@@ -32,31 +34,28 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ marginTop: '70px' }}>
         <MDBJumbotron fluid>
-          <MDBContainer className="text-white text-center mt-5">
-            <h1 className="h1-responsive display-2">Enter, team_232!</h1>
+          <MDBContainer className="text-white text-center mt-5" style={{ height: '70vh' }}>
+            <h1 className="h1-responsive display-2">Welcome to FarmSpired</h1>
             <hr />
 
-            <p className="display-5 mx-5 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio
-              vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui,
-              dolorum!
-            </p>
-            <MDBBtn href="#" gradient="purple" rounded>
-              More
+            <p className="display-5 mx-5 mb-5">Eco-friendly farm produce.Digitalized database.The future of farming.</p>
+            <MDBBtn href="#" className="home-btn" color="white">
+              START NOW
             </MDBBtn>
           </MDBContainer>
         </MDBJumbotron>
         <MDBContainer>
           <MDBRow>
             <MDBCol md="12" className="mt-4">
-              <h2 className="text-center my-5 font-weight-bold">Get FarmSpired By team_232! #weRock</h2>
+              <h2 className="text-center my-5 font-weight-bold">What We Are About</h2>
             </MDBCol>
             <MDBCol md="6">
               <p className="mb-1">
-                Omnis fugit magni magnam quo necessitatibus amet harum vel! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Id quam hic, debitis blanditiis, eum similique itaque maiores error cumque in corrupti
+                Farmspired helps bring agriculture in Nigeria in a new light.The digitalized way.We provide trainings
+                for upcoming farmers,databases to store farmers digitally whoa are in need of funds or otherr benefits
+                and so much more
               </p>
               <p className="text-muted mb-1">
                 lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum
@@ -69,19 +68,8 @@ class HomePage extends React.Component {
               <hr className="my-5 " />
             </MDBCol>
             <MDBCol md="6">
-              <p className="mb-1">
-                Omnis fugit magni magnam quo necessitatibus amet harum vel! Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Id quam hic, debitis blanditiis, eum similique itaque maiores error cumque in corrupti
-              </p>
-              <p className="text-muted mb-1">
-                lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum
-                lorem ipsum dalum ipsum
-              </p>
-              <p className="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quam hic, debitis blanditiis, eum similique
-                itaque maiores error cumque in corrupti, omnis fugit magni magnam quo necessitatibus amet harum vel!
-              </p>
-              <hr className="my-5" />
+              <img src={agric} alt="" className="img-fluid" width="800" />
+              {/* <hr className="my-5" /> */}
             </MDBCol>
           </MDBRow>
           <MDBRow>
@@ -92,13 +80,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="bars" className="pink-text pr-2" />
-                      <strong>FARM</strong>
+                      <strong>CAPITAL FORUM</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                      We set farmers who are not financialy capable to start their business with government
+                      offiials,NGOs or other organizations <br></br> for provision of capital.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="aqua" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -112,13 +100,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="css3" brand className="pink-text pr-2" />
-                      <strong>CSS</strong>
+                      <strong>DATABASE</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                      As a platform we register Farmers in order to get funding or other benefits from either the
+                      government or private bodies and they go to the right people who need them, no partiality.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="peach" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -132,13 +120,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="cubes" className="blue-text pr-2" />
-                      <strong>REACT</strong>
+                      <strong>TRAININGS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                      We offer farmers who lack the necessary skill to run an advanced farming system trainings and
+                      orientation programs which would be beneficial to the farmers in various areas
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="blue" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -153,13 +141,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="css3" brand className="pink-text pr-2" />
-                      <strong>PRODUCTS</strong>
+                      <strong>PURCHASE/MARKETING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                      We link farmers to sellers of various raw materials and farm equipments We also link the farmers
+                      to their potential customers
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="peach" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -173,13 +161,13 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="table" className="green-text pr-2" />
-                      <strong>DATABASE</strong>
+                      <strong>ADVANCED MACHINERY HIRING</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum.
+                      This is a forum where registered farmers can rent heavy machinery , tools or equipments for your
+                      farm work and return at an agreed date.
                     </MDBCardText>
-                    <MDBBtn href="#" gradient="aqua" rounded>
+                    <MDBBtn href="#" className="more-btn" gradient="forestgreen" rounded>
                       More
                     </MDBBtn>
                   </MDBCardBody>
@@ -193,14 +181,16 @@ class HomePage extends React.Component {
                   <MDBCardBody cascade className="text-center">
                     <MDBCardTitle>
                       <MDBIcon icon="arrows-alt" className="blue-text pr-2" />
-                      <strong>MR VICKY...lol</strong>
+                      <strong>iMPROVED SEED /FERTILIZERS</strong>
                     </MDBCardTitle>
                     <MDBCardText>
-                      lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum dalum lorem ipsum dalum ipsum lorem ipsum
-                      dalum lorem ipsum dalum ipsum
+                      Since we already have a database, the government can provide seeds to the farmers for free or at a
+                      subsidized rate through the seed servicing forum
                     </MDBCardText>
 
-                    <MDBBtn>More</MDBBtn>
+                    <MDBBtn className="more-btn" gradient="forestgreen">
+                      More
+                    </MDBBtn>
                   </MDBCardBody>
                 </MDBCard>
               </MDBAnimation>
